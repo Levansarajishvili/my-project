@@ -3,10 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Facebook } from "../Images/Facebook"
+import { Socialss } from "../Images/Socialss"
+import { Socials3 } from "../Images/Socials3"
 import { Logo } from "../Images/Logo"
 import { Login } from "../Images/Login"
 import { Search } from "../Images/Search"
 import { Cart } from "../Images/Cart"
+import { Burger } from "../Images/Burger"
 
 
 function App() {
@@ -15,7 +18,7 @@ function App() {
   return (
     <div>
       <header className='bg-[#012426] w-full h-[96px] flex justify-center items-center'>
-        <div className='flex justify-between w-[80%]'>
+        <div className='min-[320px]:hidden lg:flex justify-between w-[80%]'>
           <ul className='flex justify-between'>
             <li className='mr-[32px]'>
               <a href="#" className='font-inter text-[#A1C3C9] font-normal text-2xl'>Home</a>
@@ -29,6 +32,19 @@ function App() {
               <a href="#" className='font-inter text-[#A1C3C9] font-normal text-2xl'>Contact Us</a>
             </li>
           </ul>
+          <Logo />
+          <div className='w-[20%] flex justify-between'>
+            <button><Search /></button>
+            <button className='w-[40px] h-[40px] bg-[#05BCCA] rounded-lg flex items-center justify-center'><Login /></button>
+            <button className='w-[40px] h-[40px] border-solid border-2 border-[#05BCCA] rounded-lg flex items-center justify-center'><Cart /></button>
+          </div>
+        </div>
+
+        <div className='lg:hidden min-[320px]:flex justify-between w-[80%]'>
+          <div className='w-[30%] flex justify-start'>
+            <Burger />
+          </div>
+
           <Logo />
           <div className='w-[20%] flex justify-between'>
             <button><Search /></button>
@@ -96,8 +112,8 @@ function App() {
 
               <div className='flex justify-between'>
                 <Facebook />
-                <Facebook />
-                <Facebook />
+                <Socialss />
+                <Socials3 />
               </div>
             </div>
 
@@ -159,8 +175,8 @@ function App() {
 
               <div className='flex justify-between mt-[8px]'>
                 <Facebook />
-                <Facebook />
-                <Facebook />
+                <Socialss />
+                <Socials3 />
               </div>
             </div>
 
