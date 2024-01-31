@@ -10,6 +10,7 @@ import { Login } from "../Images/Login"
 import { Search } from "../Images/Search"
 import { Cart } from "../Images/Cart"
 import { Burger } from "../Images/Burger"
+import { Guitarbg } from "../Images/Guitarbg"
 
 
 function App() {
@@ -53,8 +54,17 @@ function App() {
           </div>
         </div>
       </header>
-      <main>
-        I am main
+      <main className='w-full flex justify-center items-center'>
+        <div className='w-full h-[400px] relative '>
+          <img className='z-[-10] w-full' src="/Images/Guitarbggg.svg" alt="" />
+
+          <div className='w-full flex justify-center'>
+            <div className='flex justify-between items-center absolute top-[72px]'>
+              <h2 className='font-inter font-normal text-[32px] leading-9 text-[#fff] '>NEW <span className='text-[#05BCCA]'> COLLECTION</span></h2>
+              <a href="#" className='bg-[#C46A2B] p-[1px 3px] text-[#fff]'>&#8594;</a>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer className='bg-[#2C4246] w-full flex justify-center items-center py-[64px]'>
