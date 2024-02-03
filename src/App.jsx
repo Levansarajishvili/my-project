@@ -55,13 +55,29 @@ function App() {
         </div>
       </header>
       <main className='w-full flex justify-center items-center'>
-        <div className='w-full h-[400px] relative '>
-          <img className='z-[-10] w-full' src="/Images/Guitarbggg.svg" alt="" />
+        <div className='flex flex-col'>
+          <div className='w-full h-[400px] relative '>
+            <img className='z-[-10] w-full' src="/Images/Guitarbggg.svg" alt="" />
 
-          <div className='w-full flex justify-center'>
-            <div className='flex justify-between items-center absolute top-[72px]'>
-              <h2 className='font-inter font-normal text-[32px] leading-9 text-[#fff] '>NEW <span className='text-[#05BCCA]'> COLLECTION</span></h2>
-              <a href="#" className='bg-[#C46A2B] p-[1px 3px] text-[#fff]'>&#8594;</a>
+            <div className='w-full flex justify-center'>
+              <div className='flex justify-between items-center absolute top-[72px]'>
+                <h2 className='font-inter font-normal text-[32px] leading-9 text-[#fff] '>NEW <span className='text-[#05BCCA]'> COLLECTION</span></h2>
+                <a href="#" className='bg-[#C46A2B] p-[1px 3px] text-[#fff]'>&#8594;</a>
+              </div>
+            </div>
+          </div>
+
+          <div className='w-full relative '>
+            <img className='z-[-10] w-full' src="/Images/Rectangle 6 (2).svg" alt="" />
+
+            <div className='w-full flex justify-center'>
+              <div className='flex flex-col absolute top-[72px]'>
+                <h2 className='font-inter font-normal text-[32px] leading-9 text-[#05BCCA] mb-10'>JOIN OUR MAILING LIST</h2>
+                <div className='bg-[#2C4246] opacity-80 flex justify-between rounded-lg border-2 border-current border-solid'>
+                  <input type="text" placeholder='e-mail address' className='bg-[#2C4246] opacity-100 py-[8px] px-[10px]' />
+                  <button className='bg-[#05BCCA] font-inter text-base text-[#ffff] py-[8px] px-[10px]'>SUBSCRIBE</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
